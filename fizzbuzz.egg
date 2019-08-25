@@ -1,0 +1,24 @@
+do(define(fizzbuzz,
+    fun(
+      do(
+        define(count, 0),
+        while(<(count, 100),
+          do(
+            define(count, +(count, 1)),
+            if(==(0, %(count, 15)),
+              print("Fizzbuzz"),
+              if(==(0, %(count, 5)),
+                print("Buzz"),
+                if(==(0, %(count, 3)),
+                  print("Fizz"),
+                  print(count),
+                ),
+              ),
+            ),
+          )
+        )
+      )
+    )
+  ),
+  fizzbuzz()
+)

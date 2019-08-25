@@ -1,0 +1,4 @@
+do(
+  define(dragon, "fluffykins"),
+  print(+(dragon, " is a very good girl"))
+)

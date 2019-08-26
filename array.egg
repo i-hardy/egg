@@ -1,0 +1,12 @@
+do(define(multiply, fun(num,
+     do(
+          *(num, 2)
+     ))),
+   print(map(array(1, 2, 3), multiply)),
+   define(isEven, fun(num,
+     do(
+          ==(%(num, 2), 0)
+     )
+   )),
+   print(filter(array(1, 2, 3, 4, 5), isEven))
+)

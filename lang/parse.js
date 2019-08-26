@@ -13,7 +13,7 @@ function parseApply(expr, program) {
     if (program[0] == ",") {
       program = program.slice(1).trimLeft();
     } else if (program[0] != ")") {      
-      throw new SyntaxError(`Expected , or ), received ${program[0]}`);
+      throw new SyntaxError(`Expected ',' or ')', received ${program[0]}`);
     }
   }
   return parseApply(expr, program.slice(1));

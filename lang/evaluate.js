@@ -53,7 +53,7 @@ specialForms.fun = (args, scope) => {
   });
 
   return function() {
-    if (arguments.length != params.length) {
+    if (arguments.length < params.length) {
       throw new TypeError("Wrong number of arguments");
     }
     let localScope = Object.create(scope);
